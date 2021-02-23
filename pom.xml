@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>tech.guyi.web.quick</groupId>
+    <artifactId>quick-web-dependencies</artifactId>
+    <version>0.0.0.1</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <quick.web.core.version>0.0.0.1</quick.web.core.version>
+
+        <quick.web.permission.version>0.0.0.1</quick.web.permission.version>
+        <quick.web.permission.jwt.version>0.0.0.1</quick.web.permission.jwt.version>
+        <quick.web.permission.redis.version>0.0.0.1</quick.web.permission.redis.version>
+        <quick.web.permission.admin.version>0.0.0.1</quick.web.permission.admin.version>
+        <quick.web.permission.admin.default.version>0.0.0.1</quick.web.permission.admin.default.version>
+
+        <quick.web.service.version>0.0.0.1</quick.web.service.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>tech.guyi.web.quick</groupId>
+                <artifactId>quick-web-core</artifactId>
+                <version>${quick.web.core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>tech.guyi.web.quick</groupId>
+                <artifactId>quick-web-permission</artifactId>
+                <version>${quick.web.permission.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>tech.guyi.web.quick</groupId>
+                <artifactId>quick-web-permission-jwt-memory</artifactId>
+                <version>${quick.web.permission.jwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>tech.guyi.web.quick</groupId>
+                <artifactId>quick-web-permission-redis-memory</artifactId>
+                <version>${quick.web.permission.redis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>tech.guyi.web.quick</groupId>
+                <artifactId>quick-web-permission-admin</artifactId>
+                <version>${quick.web.permission.admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>tech.guyi.web.quick</groupId>
+                <artifactId>quick-web-permission-admin-default</artifactId>
+                <version>${quick.web.permission.admin.default.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>tech.guyi.web.quick</groupId>
+                <artifactId>quick-web-service</artifactId>
+                <version>${quick.web.service.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
